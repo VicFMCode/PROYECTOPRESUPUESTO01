@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    margin-top: 1px;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center; 
+}
+
+ /* Estilos básicos para la página */
+ body {
+    
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: beige;
+    text-align: center;
+}
+
+h1 {
+    
+    margin-top: 1%;
+    
+    color: #000000;
+    text-align: center;
+}
+
+/* Estilos para los cuadros de transacciones */
+.cuadro {
+    background-color: #4cc44e83;
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#ingresos {
+    background-color: #4cc44e83;
+    color: #080808;
+}
+
+#egresos {
+    background-color: #4cc44e83;
+    color: #080808;
+}
+
+#total {
+    background-color: #4d71ff6a;
+    color: #080808;
+}
+
+#porcentaje-gastos {
+    background-color: #4dd5ffb9;
+    color: #080808;
+}
+
+/* Estilo para los textos de monto */
+h2 {
+    margin: 10px 0;
+}
+
+
+.container{
+    display: flex;
+    margin: auto;
+    margin-left: 2%;
+    
+
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.inputpane{
+   
+    width: 500px;
+    
+}
+
+header{
+    background-image: url(../IMG/dinnero.jpg);
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column
+    
+}
+
+
+
+.tabbed-pane {
+    width: 300px;
+    margin: 0 auto;
+    margin-left: auto;
+}
+
+.tabs {
+    display: flex;
+
+   
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab-button.active {
+    background: #000;
+    color: white;
+}
+
+.tab-content {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+
+#type{
+    width: 300px;
+ 
+}
+
+#description{
+    width: 300px;
+ 
+}
+
+#amount{
+    width: 300px;
+ 
+}
+
+#date{
+    width: 300px;
+ 
+}
+
+
+.cuadro {
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ingresos {
+    background-color: #8dd8f6;
+    color: #000000;
+    
+}
+
+#egresos {
+    background-color: #00bffff5;
+    color: #721c24;
+}
+
+#total {
+    background-color: #ffcdfde8;
+    color: #856404;
+}
+
+#porcentaje-gastos {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+h2 {
+    
+    margin: 10px 0;
+}
+
+/* Estilos para el formulario */
+form {
+    text-align: center;
+    margin: 20px;
+    margin-left: 3%;
+}
+
+input[type="number"] {
+    margin-top: 5%;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+select {
+    width: 30%;
+    height: 30%;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff75a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #21886b;
+}
+
+.tabbed-pane1{
+    margin-right: 2%;
+}

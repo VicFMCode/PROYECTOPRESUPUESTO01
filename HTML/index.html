@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESUPUESTO202401</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header> 
+        <div class="row">
+            <div class="col-12 text-center my-4">
+                <h1 id="app-title">Presupuesto de </h1>
+            </div>
+            <div class="cuadro" id="total">Monto disponible: $0.00</div>
+            <div class="cuadro" id="ingresos">Ingresos: $0.00</div>
+            <div class="cuadro" id="egresos">Egresos: $0.00</div>
+           <div class="cuadro" id="porcentaje-gastos">Porcentaje de gastos: 0%</div>
+    </header>
+
+    <br>
+
+    <div class="container">  
+        
+        <div class="row">
+
+            
+                <form id="form-transaccion">
+                    <div class="tabbed-pane1">
+                        <h1>Registre sus transacciones aqui</h1>
+                        <br>
+                        <br>
+                        <input type="date" id="dateingreso" required>
+                        <br>
+                        <br>
+                        <input type="text" id="descriptioningreso" placeholder="Descripción" required>
+                        <br>
+                        <br>
+                        <input type="number" id="monto" placeholder="Ingrese monto" required min="0">
+                <select id="tipo">
+                    <option value="ingreso">Ingreso</option>
+                    <option value="egreso">Egreso</option>
+                </select>
+                <button type="submit">Agregar Transacción</button>
+                    </div>
+                </form>
+        </div>
+
+        <div class="tabbed-pane">
+            <h1>Historial de transacciones</h1>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="tab3">Ingresos</button>
+                <button class="tab-button" data-tab="tab4">Egresos</button>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab active" id="tab3">
+                    <table id="totalingreso" class="table" border="1">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tab" id="tab4">
+                    <table id="totalegreso" class="table" border="1">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+
+
+   
+    <script src="../JS/FECHA.js"></script>
+    <script src="../JS/index.js"></script>
+   
+</html>
